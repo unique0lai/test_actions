@@ -43,3 +43,4 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           files: |
             hello.txt
+          automatic_release_tag: v1.0.0
