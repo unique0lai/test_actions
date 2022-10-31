@@ -34,3 +34,11 @@ jobs:
         run: |
               pwd
               ls -al
+              echo hello > hello.txt
+      - name: Automatic Releases
+        uses: marvinpinto/action-automatic-releases@v1.2.1
+        with:
+          draft: true
+          pre-release: true
+          files: |
+            hello.txt
