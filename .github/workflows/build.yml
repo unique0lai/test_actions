@@ -40,5 +40,6 @@ jobs:
         with:
           draft: true
           pre-release: true
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
           files: |
             hello.txt
